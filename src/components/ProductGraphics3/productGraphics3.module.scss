@@ -1,0 +1,67 @@
+.container{
+    background-color: yellowgreen;
+    height: 500vh;
+    width: 100vw;
+    display: flex;
+    // flex-direction: column;
+    top: -326vh;
+    position: relative;
+    // margin-top: -300vh;
+    // z-index: 4;
+    // justify-content: center;
+    // align-content: center;
+
+    &Images{
+        background-color: #B43BC6;
+        // margin-top: 10vh;
+        // top: 0;
+        height: 400vh;
+        width: 100%;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // position: fixed;
+
+    }
+
+    &Text1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 64px;
+        line-height: .90625;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        z-index: 1;
+        position: fixed;
+        opacity: 0;
+        top: 0;
+    }
+
+    &Text2{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        text-align: center;
+        font-size: 64px;
+        line-height: .90625;
+        font-weight: 600;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        z-index: 1;
+        position: fixed;
+        opacity: 0;
+        top: 0;
+    }
+}
+

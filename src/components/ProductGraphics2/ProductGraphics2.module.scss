@@ -1,0 +1,88 @@
+.mainContainer {
+  width: 100vw;
+  height: 400vh;
+  position: relative;
+  // margin-top: -180vh;
+  // background-color: yellow;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  // align-items: center;
+  // overflow: scroll;
+  // mask-image: radial-gradient(circle at center, transparent 0, black 0);
+}
+
+.imageMainContainer {
+  //  background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    // margin-top: 10vh;
+    margin-top: -180vh;
+    height: 100%;
+    // align-items: center;
+    // transition: transform 0.1s ease-out;
+    // background-color: palevioletred;
+    // mask-image: radial-gradient(circle at center, transparent 0, black 0);
+  }
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  // background-color: red;
+// transition: transform 0.1s ease;
+  
+
+
+  &CircleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    // max-width: 50%;
+    height: 100%;
+    // background-color: blue;
+    z-index: 3;
+    position: absolute;
+  }
+
+  &Spiral {
+    // height: 150%;
+    // position: relative;
+    width: 10%;
+    display: flex;
+    // background-color: aqua;
+  }
+
+  &Circle {
+    width: 5%;
+    // background-color: lawngreen;
+  }
+}
+
+.textContainer{
+  margin-top: -180vh;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 56px;
+    line-height: .9642857143;
+    font-weight: 600;
+    letter-spacing: -0.013em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    z-index: 2;
+    opacity: 0; /* Initially hidden */
+    // background: blue;
+}
+
+
+

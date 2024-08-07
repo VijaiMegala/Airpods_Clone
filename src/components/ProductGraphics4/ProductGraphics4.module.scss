@@ -1,0 +1,48 @@
+.container{
+    background-color: #7499E9;
+    height: 500vh;
+    // width: 100vw;
+    // z-index: -1;
+    display: flex;
+    justify-content: center;
+    // position: relative;
+    
+    margin-top: -75vh;
+
+    &Images{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #7499E9;
+        // position: fixed;
+        position: static;
+        // top: 0;
+        // z-index: 5;
+    }
+
+    &Text{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 56px;
+        line-height: .9642857143;
+        font-weight: 600;
+        letter-spacing: -0.013em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        // z-index: 2;
+        // position: fixed;
+        display: none;
+        position: absolute;
+        // top: 0;
+        left: 0;
+        opacity: 0;
+        // top: 0;
+    }
+}

@@ -1,0 +1,242 @@
+.container{
+  height: 180vh;
+  background-color: green;
+  z-index: 3;
+  display: flex;
+  // justify-content: center;
+  // opacity: 0;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: #ebebec;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: yellow;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.ProductDetailsContainer {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  // background-color: green;
+  z-index: 0;
+  width: 80%;
+  color: #1d1d1f;
+
+  &Main {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ProductName {
+  width: 100%;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  text-align: center;
+  font-size: 165px;
+  font-weight: 600;
+  line-height: 165px;
+  letter-spacing: -0.013em;
+}
+
+.ProductDescription {
+  font-size: 28px;
+  line-height: 1.1334333333;
+  font-weight: 600;
+  letter-spacing: -0.013em;
+  font-family: "SF Pro Display"," SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  text-align: center;
+}
+
+.AirpodsLayer {
+  width: 80%;
+  height: 120%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  // background-color: red;
+  min-width: 1024px;
+  z-index: 1;
+
+  &Left {
+    margin-top: -20%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    // background-color: aqua;
+    justify-self: flex-start;
+  }
+
+  &LeftBuds {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // bottom: 45%;
+  }
+
+  &Right {
+    margin-top: 35%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    // background-color: aquamarine;
+  }
+
+  &RightBuds {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // top: 46%;
+  }
+}
+
+.ProductLinksContainer {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-self: flex-end;
+  height: 20%;
+  width: 100%;
+  // background-color: red;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+
+  &Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #06c;
+    cursor: pointer;
+    &Text {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 1028px) {
+  .AirpodsLayer {
+    width: 100%;
+    align-items: center;
+
+    &Left {
+      margin-top: -10%;
+      width: 35%;
+    }
+
+    &LeftBuds{
+        height: 80%;
+    }
+
+    &Right {
+      width: 37%;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .mainContainer {
+    display: flex;
+    // grid-template-columns: 70% 20% 10%;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ProductDetailsContainer {
+      height: fit-content;
+      justify-content: center;
+      position: relative;
+      
+      &Main {
+        margin-top: 0%;
+      }
+  }
+  .ProductName {
+    font-size: 80px;
+    line-height: 1.05;
+  }
+
+  .ProductDescription {
+    font-size: 22px;
+    line-height: 1.2727272727;
+  }
+  .AirpodsLayer {
+    height: 50%;
+    // width: 100%;
+    min-width: 100%;
+    justify-content: center;
+    z-index: 0;
+    // padding: 5%;
+
+    &Left {
+      margin-top: 0%;
+      height: 100%;
+      width: 20%;
+      padding-top: 4%;
+    }
+  
+    &LeftBuds {
+      height: 60%;
+    }
+  
+    &Right {
+      margin-top: 0%;
+      height: 100%;
+      width: 20%;
+      align-items: flex-end;
+      padding-bottom: 4%;
+    }
+  
+    &RightBuds {
+      height: 60%;
+    }
+
+  }
+
+  .ProductLinksContainer {
+    width: 50%;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    gap: 0px;
+    align-self: auto;
+    height: 0%;
+  }
+
+}
+
+@media (max-width: 370px) {
+
+  .ProductDetailsContainer {
+    text-align: center;
+  }
+  .ProductLinksContainer {
+    width: 100%;
+  }
+}

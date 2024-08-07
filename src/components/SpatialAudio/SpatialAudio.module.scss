@@ -1,0 +1,40 @@
+.container{
+    &Sound{
+            
+
+        &Main{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            height: 80%;
+            width: 60%;
+            border-radius: 3%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        &Text1{
+            position: absolute;
+            font-size: 56px;
+            line-height: .9286514286;
+            font-weight: 600;
+            letter-spacing: -0.003em;
+            text-align: center;
+            font-family: "SF Pro Display"," SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        &Text2{
+            width: 50%;
+            position: absolute;
+            text-align: center;
+            font-size: 17px;
+            line-height: 1.2941176471;
+            font-weight: 600;
+            letter-spacing: .013em;
+            font-family: "SF Pro Display", "SF Pro Icons"," Helvetica Neue", Helvetica, Arial, sans-serif;
+            opacity: 0;
+        }
+    }
+}
